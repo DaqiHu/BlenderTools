@@ -28,13 +28,11 @@ def register():
     """
     Registers the addon preferences when the addon is enabled.
     """
-    if not hasattr(bpy.types, Ue2RigifyAddonPreferences.bl_idname):
-        bpy.utils.register_class(Ue2RigifyAddonPreferences)
+    bpy.utils.register_class(Ue2RigifyAddonPreferences)
 
 
 def unregister():
     """
     Unregisters the addon preferences when the addon is disabled.
     """
-    if hasattr(bpy.types, Ue2RigifyAddonPreferences.bl_idname):
-        bpy.utils.unregister_class(Ue2RigifyAddonPreferences)
+    bpy.utils.unregister_class(Ue2RigifyAddonPreferences)
