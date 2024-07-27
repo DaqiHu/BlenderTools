@@ -73,7 +73,7 @@ def validate_exe(exe_path: Path) -> bool:
 
 def launch_blender(version: str, debug: str):
     virtual_env = PYTHON_3_11_VIRTUAL_ENV
-    if version in ['3.6']:
+    if version in ['3.6', '4.0']:
         virtual_env = PYTHON_3_10_VIRTUAL_ENV
 
     if not validate_venv(virtual_env):
